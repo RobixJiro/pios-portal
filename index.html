@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/pios-portal/favicon.svg" />
+    <link rel="manifest" href="/pios-portal/manifest.webmanifest" />
+    <script src="/pios-portal/pios-runtime-config.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Primary Meta Tags -->
+    <title>OpenGraph Intel | Visual OSINT & Link Analysis Framework</title>
+    <meta
+      name="title"
+      content="OpenGraph Intel | Visual OSINT & Link Analysis Framework"
+    />
+    <meta
+      name="description"
+      content="Open-source visual link analysis and OSINT platform. Map, discover, and visualize relationships between entities like DNS records, IP addresses, and organizations."
+    />
+    <meta
+      name="keywords"
+      content="OSINT, visual analysis, link analysis, graph intelligence, open source, network discovery, cybersecurity tool, digital forensics, OGI"
+    />
+    <meta name="author" content="OpenGraph Intel" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0e1522" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      // Apply the saved theme before first paint so light-mode users don't see a dark flash.
+      // Keep in sync with src/stores/themeStore.ts.
+      try {
+        var ogiTheme = localStorage.getItem("ogi-theme");
+        if (ogiTheme === "system") {
+          ogiTheme = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+        }
+        var resolvedTheme = ogiTheme === "light" ? "light" : "dark";
+        document.documentElement.dataset.theme = resolvedTheme;
+        var themeMeta = document.querySelector('meta[name="theme-color"]');
+        if (themeMeta) {
+          themeMeta.setAttribute("content", resolvedTheme === "light" ? "#f4f6fa" : "#0e1522");
+        }
+      } catch (e) {}
+    </script>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ogi.khas.app/" />
+    <meta
+      property="og:title"
+      content="OpenGraph Intel | Visual OSINT & Link Analysis Framework"
+    />
+    <meta
+      property="og:description"
+      content="Open-source visual link analysis and OSINT platform. Map, discover, and visualize relationships between entities like DNS records, IP addresses, and organizations."
+    />
+    <meta property="og:image" content="https://ogi.khas.app/ogi.svg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://ogi.khas.app/" />
+    <meta
+      property="twitter:title"
+      content="OpenGraph Intel | Visual OSINT & Link Analysis Framework"
+    />
+    <meta
+      property="twitter:description"
+      content="Open-source visual link analysis and OSINT platform. Map, discover, and visualize relationships between entities like DNS records, IP addresses, and organizations."
+    />
+    <meta property="twitter:image" content="https://ogi.khas.app/ogi.svg" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://ogi.khas.app/" />
+    <script type="module" crossorigin src="/pios-portal/assets/index-Du1el4jB.js"></script>
+    <link rel="modulepreload" crossorigin href="/pios-portal/assets/rolldown-runtime-XKyaHtl9.js">
+    <link rel="modulepreload" crossorigin href="/pios-portal/assets/vendor-react-Cm8wW111.js">
+    <link rel="modulepreload" crossorigin href="/pios-portal/assets/vendor-tanstack-query-DuAZQ8G4.js">
+    <link rel="modulepreload" crossorigin href="/pios-portal/assets/vendor-supabase-CE3ipEC1.js">
+    <link rel="modulepreload" crossorigin href="/pios-portal/assets/supabase-DxmlRo7x.js">
+    <link rel="modulepreload" crossorigin href="/pios-portal/assets/httpClient-CsFzwvLo.js">
+    <link rel="modulepreload" crossorigin href="/pios-portal/assets/vendor-tanstack-grid-0D7s1Anw.js">
+    <link rel="modulepreload" crossorigin href="/pios-portal/assets/vendor-zod-Bmaqel_u.js">
+    <link rel="modulepreload" crossorigin href="/pios-portal/assets/vendor-sigma-D-pZL-UW.js">
+    <link rel="modulepreload" crossorigin href="/pios-portal/assets/vendor-deckgl-DBN9QRGq.js">
+    <link rel="stylesheet" crossorigin href="/pios-portal/assets/index-B6CRVQBT.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="/pios-portal/env.js"></script>
+  </body>
+</html>

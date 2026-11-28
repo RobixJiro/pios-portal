@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting to PIOS Portal...</title>
+    <script>
+      (function () {
+        try {
+          var target = window.location.pathname + window.location.search + window.location.hash;
+          window.sessionStorage.setItem("pios.ghp.redirect", target);
+        } catch (e) {}
+        window.location.replace("/pios-portal/");
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

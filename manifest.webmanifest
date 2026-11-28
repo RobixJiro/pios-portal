@@ -1,0 +1,26 @@
+{
+  "name": "PIOS — Palantir Intelligence OS",
+  "short_name": "PIOS",
+  "description": "Sovereign Personal & Organizational Link Analysis and Intelligence Operating System",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0b111a",
+  "theme_color": "#0b111a",
+  "categories": ["productivity", "security", "utilities"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/ogi.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}
